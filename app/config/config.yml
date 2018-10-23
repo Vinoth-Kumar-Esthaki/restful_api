@@ -76,7 +76,11 @@ fos_rest:
         view_response_listener: 'force'
     body_converter: 
         enabled: true
+        validate: true
+        validation_errors_argument: validationErrors
     param_fetcher_listener: true
+    exception: 
+      enabled: true
 
 sensio_framework_extra:
     router:      { annotations: true }
